@@ -28,7 +28,7 @@
 //         list.innerHTML += `
 //         <li>
 //         ${item.name} (Rs. ${item.price} * ${item.qty})
-        
+
 //         <button onclick = "inc(${index})"> + </button>
 //         <button onclick = "dec(${index})"> - </button>
 //         <button onclick = "dlt(${index})"> ✖ </button>
@@ -55,18 +55,13 @@
 //     showItem();
 // }
 
-
-
-
-
-
 // Product card hover + Add to Cart functionality
 
 // Select all product cards
 const productCards = document.querySelectorAll(".product-card");
 
 // Hover effect
-productCards.forEach(card => {
+productCards.forEach((card) => {
   card.addEventListener("mouseenter", () => {
     card.style.transform = "translateY(-8px)";
     card.style.transition = "0.3s ease";
@@ -86,7 +81,7 @@ let cartCount = 0;
 // Cart count display (if you have cart icon)
 const cartCountDisplay = document.getElementById("cart-count");
 
-cartButtons.forEach(button => {
+cartButtons.forEach((button) => {
   button.addEventListener("click", () => {
     cartCount++;
 
